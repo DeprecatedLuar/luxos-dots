@@ -2,9 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    go
-    gotools
-    golangci-lint
+    go go-tools gotools golanci-lint    
     python3
     nodejs
     cargo

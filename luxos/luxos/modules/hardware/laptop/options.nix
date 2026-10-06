@@ -6,7 +6,7 @@ in
 {
   options.laptop.pluggedIn = lib.mkOption {
     type = profile;
-    default = "performance";
+    default = "balanced";
     description = "performance | balanced | power-saver";
   };
 

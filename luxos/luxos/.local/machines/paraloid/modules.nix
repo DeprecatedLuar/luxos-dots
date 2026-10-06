@@ -23,5 +23,8 @@
     ./packages/yappers-of-linux.nix
     ./vimsanity
     ./services/tailscale.nix
+    ./desktop/compositors/cinnamon.nix
+    ./desktop/greeters/greetd.nix
+    ./desktop/shells/noctalia.nix
   ];
 }
