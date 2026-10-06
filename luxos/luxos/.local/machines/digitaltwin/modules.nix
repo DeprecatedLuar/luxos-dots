@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ./hardware/laptop.nix
+    ./hardware/laptop
     ./hardware/intel.nix
     ./desktop/compositors/hyprland.nix
     ./packages/lux-goodies/desktop-apps.nix

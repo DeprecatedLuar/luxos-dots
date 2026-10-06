@@ -2,7 +2,7 @@
 {
   imports = [
     ./packages/lux-goodies/gaming.nix
-    ./hardware/laptop.nix
+    ./hardware/laptop
     ./hardware/nvidia.nix
     ./hardware/intel.nix
     ./hardware/tablet.nix
