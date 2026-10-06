@@ -3,10 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
 
-    unstable.noctalia
-   
-    
-#    libreoffice
+# GUI
     rofi
     audacity
     mailspring
@@ -21,7 +18,10 @@
     unstable.zapzap
 #   equibop # idk why its broken on wayland so far
     telegram-desktop
-    
+    unstable.atlauncher
+	unstable.noctalia
+
+# CLI    
     megacmd
     whisper-cpp
     scrcpy
@@ -30,10 +30,13 @@
 	wlopm
 	swayidle
 	unstable.lf
-    
+    unstable.hyprmon
     nwg-wrapper
     quickshell
 
+
+
+# ???
     # Hardware video acceleration diagnostics
     libva-utils
     v4l-utils

@@ -120,11 +120,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790942849,
-        "narHash": "sha256-2BVA6KLBFak1D09ZjiAxfI7Soa+khtKE5cLXX12WVzE=",
+        "lastModified": 1791286673,
+        "narHash": "sha256-QHUgLqwV5Oj5zkkOQ8nbKmvWsgoiPXdyviuhnJP2cK8=",
         "owner": "DeprecatedLuar",
         "repo": "luxos",
-        "rev": "7205fccde422dee6598e01cc0cf66135e1d1988d",
+        "rev": "f73d05a69a17c6aab4818e4adf0a69df5722bb46",
         "type": "github"
       },
       "original": {
