@@ -20,5 +20,7 @@
     ./packages/yappers-of-linux
     ./services/tailscale.nix
     ./packages/sunshine.nix
+    ./desktop/compositors/cinnamon.nix
+    ./desktop/greeters/ly.nix
   ];
 }
