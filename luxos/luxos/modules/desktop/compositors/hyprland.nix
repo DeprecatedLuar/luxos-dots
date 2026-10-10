@@ -32,6 +32,17 @@ in
     hypridle
     hyprpicker
     swayimg
-    hyprpolkitagent
   ]);
+
+  systemd.user.services.polkit-gnome-agent = {
+    description = "polkit-gnome authentication agent";
+    wantedBy = [ "graphical-session.target" ];
+    after = [ "graphical-session.target" ];
+    partOf = [ "graphical-session.target" ];
+    serviceConfig = {
+      ExecStart = "${pkgs.unstable.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+      Restart = "on-failure";
+      RestartSec = 1;
+    };
+  };
 }

@@ -17,7 +17,7 @@
     ./local/networking.nix
     ./local/packages.nix
     ./local/preferences.nix
-    ./packages/yappers-of-linux.nix
+    ./packages/yappers-of-linux
     ./vimsanity
     ./services/tailscale.nix
     ./desktop/shells/noctalia.nix

@@ -120,11 +120,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791469421,
-        "narHash": "sha256-3jFal/Opj5lsdmgPfjKUnfQQlXKDoOO1JySN3xyjaN0=",
+        "lastModified": 1791631836,
+        "narHash": "sha256-2xRlbpSTZotOSJq4btxdyPvevT5mYk2CsZcJw4mfgnw=",
         "owner": "DeprecatedLuar",
         "repo": "luxos",
-        "rev": "b28fc54b19347ce22312375e8e81621fafea3ec0",
+        "rev": "df58d16f48f6da646771e30338d6a1b9d5d53e9c",
         "type": "github"
       },
       "original": {
@@ -264,11 +264,11 @@
     },
     "unstable": {
       "locked": {
-        "lastModified": 1790055231,
-        "narHash": "sha256-QpXotokGh5eeMG1Njiuh27oP0rK6t5+cMp7ymXSs7mc=",
+        "lastModified": 1791487292,
+        "narHash": "sha256-tqM7xDEsaeK1p6VvRygeZ9LkQRpUUkbRT02BHv6hnTM=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "b6c98e9e6633ee64753b594ff4a5febf0367fc00",
+        "rev": "8edc0c72e3a38faf5434e40d1f19431125fe4b30",
         "type": "github"
       },
       "original": {
@@ -286,11 +286,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790678878,
-        "narHash": "sha256-cd1+sZXsuTcJQT56b6mi+9M5V0zeB+U7WrWkfQhhdPo=",
+        "lastModified": 1791629025,
+        "narHash": "sha256-Y4UvsXeN35F0gjKegzWAaLxcO7JYz/uWkqIcUjTo6CY=",
         "owner": "DeprecatedLuar",
         "repo": "yappers-of-linux",
-        "rev": "73d16895df5adc3047bd916f33f797d388960d8c",
+        "rev": "8f2df2ce5a693915e13a3d422a989e13483a0b5b",
         "type": "github"
       },
       "original": {

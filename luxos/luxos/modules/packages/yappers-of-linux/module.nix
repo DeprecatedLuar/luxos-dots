@@ -6,6 +6,16 @@
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
+  flake-file.inputs.tcpeek = {
+    url = "github:DeprecatedLuar/tcpeek";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
+
+  flake-file.inputs.borderline-lsd = {
+    url = "github:DeprecatedLuar/borderline-lsd";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
+
   environment.systemPackages = [
     inputs.yappers-of-linux.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];

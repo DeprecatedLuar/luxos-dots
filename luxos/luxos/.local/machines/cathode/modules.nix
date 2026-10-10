@@ -17,7 +17,7 @@
     ./local/preferences.nix
     ./local/networking.nix
     ./vimsanity
-    ./packages/yappers-of-linux.nix
+    ./packages/yappers-of-linux
     ./services/tailscale.nix
     ./packages/sunshine.nix
   ];
