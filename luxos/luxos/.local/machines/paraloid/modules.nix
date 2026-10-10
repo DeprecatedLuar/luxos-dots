@@ -3,8 +3,6 @@
   imports = [
     ./packages/lux-goodies/gaming.nix
     ./hardware/laptop
-    ./hardware/nvidia.nix
-    ./hardware/intel.nix
     ./hardware/tablet.nix
     ./desktop/compositors/hyprland.nix
     ./packages/lux-goodies/desktop-apps.nix
@@ -13,7 +11,6 @@
     ./users/luar
     ./extras.nix
     ./packages/lux-goodies/dev.nix
-    ./services/docker.nix
     ./unstable.nix
     ./local/hardware-support
     ./local/fingerprint.nix
@@ -23,8 +20,6 @@
     ./packages/yappers-of-linux.nix
     ./vimsanity
     ./services/tailscale.nix
-    ./desktop/compositors/cinnamon.nix
-    ./desktop/greeters/greetd.nix
     ./desktop/shells/noctalia.nix
   ];
 }

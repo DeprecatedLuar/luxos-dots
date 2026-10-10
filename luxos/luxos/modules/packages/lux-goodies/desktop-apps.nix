@@ -11,9 +11,6 @@
     adwaita-icon-theme
     adw-gtk3
     zathura
-    gtk3
-    gobject-introspection
-    (python3.withPackages (ps: with ps; [ pygobject3 ]))
     playerctl
     xfce.tumbler
     ffmpegthumbnailer
@@ -30,9 +27,4 @@
     swaybg
     feh
   ];
-
-  # GObject-introspection typelibs are not linked into the system profile by
-  # default; PyGObject needs both the link and the path to resolve namespaces.
-  environment.pathsToLink = [ "/lib/girepository-1.0" ];
-  environment.sessionVariables.GI_TYPELIB_PATH = "/run/current-system/sw/lib/girepository-1.0";
 }

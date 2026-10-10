@@ -120,37 +120,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1791286673,
-        "narHash": "sha256-QHUgLqwV5Oj5zkkOQ8nbKmvWsgoiPXdyviuhnJP2cK8=",
+        "lastModified": 1791463070,
+        "narHash": "sha256-QZdtQ1r9MuAx+G8WMLf61LYiGADV9TAXrIfKlYC0Kr8=",
         "owner": "DeprecatedLuar",
         "repo": "luxos",
-        "rev": "f73d05a69a17c6aab4818e4adf0a69df5722bb46",
+        "rev": "8d8bebe4900b5ad133cb77d8ff142aa03cbe4a34",
         "type": "github"
       },
       "original": {
         "owner": "DeprecatedLuar",
         "ref": "main",
         "repo": "luxos",
-        "type": "github"
-      }
-    },
-    "nixos-hardware": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1790321948,
-        "narHash": "sha256-mZGHLGi217oLIwzDM4PNRZeCNa6g2WBXURyXbNMFs7Y=",
-        "owner": "NixOS",
-        "repo": "nixos-hardware",
-        "rev": "30d48a0ec6035f8140d0125af274f0de95f1e9b5",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "repo": "nixos-hardware",
         "type": "github"
       }
     },
@@ -225,7 +205,6 @@
         "borderline-lsd": "borderline-lsd",
         "flake-file": "flake-file",
         "luxos": "luxos",
-        "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_3",
         "tcpeek": "tcpeek",
         "unstable": "unstable",
