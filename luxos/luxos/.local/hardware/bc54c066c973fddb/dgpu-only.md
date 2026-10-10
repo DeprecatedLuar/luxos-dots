@@ -34,8 +34,17 @@ Result: NVIDIA is the only DRM device, Hyprland primary, one monitor (HDMI).
 ## Lid
 
 logind reports `Docked = true` while an external display is connected, so `HandleLidSwitchDocked=ignore`
-(systemd/NixOS default) wins over the laptop settings' `suspend`: closing the lid does not sleep.
-Unplugging the HDMI with the lid closed suspends as usual.
+wins over a lid action of `suspend`. Docked is not stable: the X server's modeset drops the HDMI
+for a moment, logind sees lid closed + undocked, and suspends as X starts. `laptop.lidSwitch = "ignore"`
+in `settings/laptop.nix` avoids it.
+
+## Switching
+
+- `luxos rebuild switch --specialisation dgpu-only` while booted into dgpu-only. A plain
+  `luxos rebuild switch` activates the default entry's userspace (hybrid X config) on the dgpu-only
+  kernel: X fails with "Screen 0 deleted because of no matching config section".
+- `nixos-rebuild` alone builds the last `/etc/nixos` snapshot luxos wrote, not `~/.config/luxos`.
+- Without a rebuild: `sudo /run/current-system/specialisation/dgpu-only/bin/switch-to-configuration switch`.
 
 ## Not tested
 

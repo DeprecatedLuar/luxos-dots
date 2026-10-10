@@ -1,7 +1,7 @@
 { inputs, pkgs, ... }:
 
 {
-  flake-file.inputs.vicinae = {
+  luxos.inputs.vicinae = {
     url = "github:vicinaehq/vicinae";
     inputs.nixpkgs.follows = "nixpkgs";
   };

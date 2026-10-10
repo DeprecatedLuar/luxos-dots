@@ -1,7 +1,7 @@
 { inputs, ... }:
 
 {
-  flake-file.inputs.hjem = {
+  luxos.inputs.hjem = {
     url = "github:feel-co/hjem";
     inputs.nixpkgs.follows = "nixpkgs";
   };

@@ -1,7 +1,7 @@
 { inputs, pkgs, ... }:
 
 {
-  flake-file.inputs.squix = {
+  luxos.inputs.squix = {
     url = "github:eduardofuncao/squix";
     inputs.nixpkgs.follows = "nixpkgs";
   };

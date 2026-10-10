@@ -1,12 +1,12 @@
 { inputs, pkgs, ... }:
 
 {
-  flake-file.inputs.tcpeek = {
+  luxos.inputs.tcpeek = {
     url = "github:DeprecatedLuar/tcpeek";
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  flake-file.inputs.borderline-lsd = {
+  luxos.inputs.borderline-lsd = {
     url = "github:DeprecatedLuar/borderline-lsd";
     inputs.nixpkgs.follows = "nixpkgs";
   };

@@ -1,7 +1,7 @@
 { inputs, pkgs, ... }:
 
 {
-  flake-file.inputs.affinity = {
+  luxos.inputs.affinity = {
     url = "github:mrshmllow/affinity-nix";
     inputs.nixpkgs.follows = "nixpkgs";
   };

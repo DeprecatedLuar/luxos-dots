@@ -1,7 +1,7 @@
 { inputs, pkgs, ... }:
 
 {
-  flake-file.inputs.zen-browser = {
+  luxos.inputs.zen-browser = {
     url = "github:youwen5/zen-browser-flake";
     inputs.nixpkgs.follows = "nixpkgs";
   };

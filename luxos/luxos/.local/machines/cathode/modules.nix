@@ -19,7 +19,7 @@
     ./vimsanity
     ./packages/yappers-of-linux
     ./services/tailscale.nix
-    ./packages/sunshine.nix
+    ./packages/sunshine
     ./desktop/compositors/cinnamon.nix
     ./desktop/greeters/ly.nix
   ];

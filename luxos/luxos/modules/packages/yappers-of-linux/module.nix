@@ -1,17 +1,17 @@
 { inputs, pkgs, ... }:
 
 {
-  flake-file.inputs.yappers-of-linux = {
+  luxos.inputs.yappers-of-linux = {
     url = "github:DeprecatedLuar/yappers-of-linux";
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  flake-file.inputs.tcpeek = {
+  luxos.inputs.tcpeek = {
     url = "github:DeprecatedLuar/tcpeek";
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  flake-file.inputs.borderline-lsd = {
+  luxos.inputs.borderline-lsd = {
     url = "github:DeprecatedLuar/borderline-lsd";
     inputs.nixpkgs.follows = "nixpkgs";
   };
