@@ -15,7 +15,8 @@
     telegram-desktop
     hydralauncher   
     unstable.atlauncher unstable.xwayland-satellite unstable.libxkbcommon unstable.libxrender
-
+	gparted
+	
 # CLI
     whisper-cpp
     scrcpy

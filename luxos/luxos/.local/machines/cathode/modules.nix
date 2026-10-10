@@ -17,11 +17,10 @@
     ./local/packages.nix
     ./local/preferences.nix
     ./hardware/nvidia.nix
-    ./desktop/compositors/cinnamon.nix
     ./local/networking.nix
     ./vimsanity
     ./packages/yappers-of-linux.nix
     ./services/tailscale.nix
-    ./desktop/greeters/greetd.nix
+    ./packages/sunshine.nix
   ];
 }

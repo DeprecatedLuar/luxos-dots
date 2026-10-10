@@ -1,31 +1,57 @@
 # kanata config
 
-Layout: `profiles/<name>/kanata.kbd`. Active profile is whatever
-`~/.config/kanata/kanata.kbd` symlinks to (`wm+vimsanity`), set by
-hand — `.profiled` just records the filename, it does not drive the symlink.
+`config/kanata/` holds two keymap fragments. `service.nix` concatenates them
+into the `config` option of `services.kanata.keyboards.vimsanity`, in order:
+`window-manager.kbd` then `vimsanity.kbd`. Neither file carries a `defcfg` and
+neither includes the other — the kanata module generates the `defcfg` from
+`extraDefCfg`, the `devices` option and a hardcoded
+`linux-continue-if-no-devs-found yes`.
 
-The `wm+vimsanity` profile includes `vimsanity.kbd` from the **repo root**
-(`~/.config/kanata/vimsanity.kbd`). `profiles/wm+vimsanity/vimsanity.kbd` is
-not loaded. Confirm what gets read with:
+**Order is the contract.** `vimsanity.kbd` uses aliases and `defvar` values that
+`window-manager.kbd` declares, and kanata requires every alias to be declared
+before use. Appending in the other order fails `--check`.
+
+Setting `configFile` instead would override `devices` and `extraDefCfg`, so the
+keymap stays in the `config` option.
+
+## Which keyboards it grabs
+
+Two levers, declared in `options.nix` and set per host in
+`.local/machines/<host>/settings/vimsanity.nix`:
+
+- `vimsanity.devices` becomes `linux-dev`. kanata opens exactly these paths.
+- `vimsanity.excludeDeviceNames` becomes `linux-dev-names-exclude`, and an empty
+  list is omitted from `defcfg` because kanata rejects `()`.
+
+`devices` wins: with it set, kanata opens only those paths, so the exclude list
+and `linux-device-detect-mode keyboard-only` have nothing to act on. Both only
+matter while `devices` is empty.
+
+Empty `devices` — the default — makes kanata intercept every device it detects
+as a keyboard, including virtual uinput keyboards that appear and vanish at
+runtime; when one is destroyed under kanata it exits with
+`failed read: No such device`.
+
+A stale path in `devices` fails quietly: `linux-continue-if-no-devs-found yes`
+is hardcoded by the kanata module, so kanata starts, matches nothing and
+remaps nothing. Swapping keyboards means updating this list.
+
+## Applying a change
+
+Editing a `.kbd` does not take effect until the unit restarts; kanata v1.9.0 has
+no file-watch. A rebuild restarts it. The generated config is `--check`ed at
+build time by the kanata module's `checkPhase`, so a malformed keymap fails the
+build instead of reaching the running system.
+
+To check a keymap without a rebuild, concatenate the fragments under a `defcfg`
+and validate the result:
 
 ```
-strace -f -e trace=openat kanata --check -c ~/.config/kanata/kanata.kbd 2>&1 | grep '\.kbd'
+kanata --check -c <assembled.kbd>
 ```
 
-Runs as the systemd user unit `kanata.service`
-(`kanata --port 5828`, no `-c`, so it loads the default
-`~/.config/kanata/kanata.kbd`).
-
-**Editing the config does NOT take effect until kanata is restarted.**
-Kanata has no file-watch/live-reload in the version installed here
-(v1.9.0). Always validate before restarting:
-
-```
-kanata --check -c ~/.config/kanata/kanata.kbd
-systemctl --user restart kanata.service
-```
-
-A failed restart leaves the keyboard unmapped, so always `--check` first.
+When the unit is down the keyboard is ungrabbed, so keys behave as plain
+hardware — layers are lost, input is not.
 
 ## `defoverrides` — what it actually is
 
@@ -57,7 +83,7 @@ on what else is currently held. Two check styles behave very differently:
   active output** keycode, regardless of what produced it. Use this with
   homerow mods, since it also catches `d^`/`k^` held.
 
-## Caps key: `@wm-cap-or-caps` (wm+vimsanity profile only)
+## Caps key: `@wm-cap-or-caps`
 
 The physical Caps key normally runs `@wm-cap`
 (`tap-hold-press`: tap → `(layer-switch vim-normal)`, hold → meta-layer).
@@ -80,15 +106,15 @@ escape action is inline because `@escaps` is declared later in
 In the `escape` layer, Ctrl+Caps returns to `default`; a plain Caps tap
 sends Esc.
 
-## `@cap-hold` — profile-provided Caps hold action
+## `@cap-hold` — Caps hold action
 
 `vimsanity.kbd` never defines what holding Caps does; every vimsanity
-Caps binding (`cap`, `pac`, `cap-esc`, `vmeta`) uses `@cap-hold`. Any
-profile including `vimsanity.kbd` must declare `cap-hold` in its
-`defalias` **before** the `include`, or `--check` fails. `wm+vimsanity`
-sets it to `(multi lmet (layer-while-held meta-layer))`; a profile
-without a meta layer would use plain `lmet`. This keeps vimsanity
-unaware of `meta-layer`.
+Caps binding (`cap`, `pac`, `cap-esc`, `vmeta`) uses `@cap-hold`.
+`window-manager.kbd` declares it as
+`(multi lmet (layer-while-held meta-layer))`; without a meta layer it
+would be plain `lmet`. This keeps vimsanity unaware of `meta-layer`.
+Being declared in the fragment that comes first is what makes it
+resolve.
 
 ## Modifiers
 
