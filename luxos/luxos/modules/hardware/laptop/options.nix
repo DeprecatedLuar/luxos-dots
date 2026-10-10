@@ -23,8 +23,8 @@ in
   };
 
   options.laptop.lidSwitch = lib.mkOption {
-    type = lib.types.str;
+    type = lib.types.enum [ "suspend" "hibernate" "hybrid-sleep" "suspend-then-hibernate" "sleep" "lock" "ignore" "poweroff" ];
     default = "suspend";
-    description = "systemd-logind action when the lid closes.";
+    description = "suspend | hibernate | hybrid-sleep | suspend-then-hibernate | sleep | lock | ignore | poweroff";
   };
 }
