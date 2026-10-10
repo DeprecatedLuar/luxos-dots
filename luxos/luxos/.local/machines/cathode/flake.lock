@@ -134,26 +134,6 @@
         "type": "github"
       }
     },
-    "nixos-hardware": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1790948122,
-        "narHash": "sha256-fDMYyzY1lI5b8RuCMrvoaIgTeRwNnTG4dNk1ucROlQE=",
-        "owner": "NixOS",
-        "repo": "nixos-hardware",
-        "rev": "0953bb1a609df63013176e3463393f8df993d3ef",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "repo": "nixos-hardware",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1789785513,
@@ -225,7 +205,6 @@
         "borderline-lsd": "borderline-lsd",
         "flake-file": "flake-file",
         "luxos": "luxos",
-        "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_3",
         "tcpeek": "tcpeek",
         "unstable": "unstable",

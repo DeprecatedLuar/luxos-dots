@@ -4,7 +4,6 @@
     ./local/hardware-support
     ./packages/lux-goodies/gaming.nix
     ./hardware/laptop
-    ./hardware/intel.nix
     ./desktop/compositors/hyprland.nix
 #    ./desktops/xfce.nix
     ./packages/lux-goodies/desktop-apps.nix
@@ -16,7 +15,6 @@
     ./unstable.nix
     ./local/packages.nix
     ./local/preferences.nix
-    ./hardware/nvidia.nix
     ./local/networking.nix
     ./vimsanity
     ./packages/yappers-of-linux.nix
