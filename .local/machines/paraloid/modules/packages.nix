@@ -20,6 +20,7 @@
     telegram-desktop
     unstable.atlauncher
 	unstable.noctalia
+	moonlight-qt
 
 # CLI    
     megacmd

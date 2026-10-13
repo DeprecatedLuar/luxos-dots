@@ -21,7 +21,6 @@
     ./vimsanity
     ./services/tailscale.nix
     ./desktop/shells/noctalia.nix
-    ./desktop/compositors/cinnamon-lite.nix
     ./desktop/greeters/ly.nix
   ];
 }
