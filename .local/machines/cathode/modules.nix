@@ -3,7 +3,7 @@
   imports = [
     ./local/hardware-support
     ./packages/lux-goodies/gaming.nix
-    ./hardware/laptop
+    ./devices/laptop
     ./desktop/compositors/hyprland.nix
 #    ./desktops/xfce.nix
     ./packages/lux-goodies/desktop-apps.nix

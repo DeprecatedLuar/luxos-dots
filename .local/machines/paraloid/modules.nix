@@ -2,8 +2,8 @@
 {
   imports = [
     ./packages/lux-goodies/gaming.nix
-    ./hardware/laptop
-    ./hardware/tablet.nix
+    ./devices/laptop
+    ./devices/tablet.nix
     ./desktop/compositors/hyprland.nix
     ./packages/lux-goodies/desktop-apps.nix
     ./packages/lux-goodies/modern-unix.nix
