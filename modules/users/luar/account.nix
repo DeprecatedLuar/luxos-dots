@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  luxos.users.luar.password = ./.password.age;
+  # luxos.users.luar.password = ./.password.age;
   users.users.luar = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" "docker" "input" "uinput" "video" ];
