@@ -19,7 +19,6 @@
 #   equibop # idk why its broken on wayland so far
     telegram-desktop
     unstable.atlauncher
-	unstable.noctalia
 	moonlight-qt
 
 # CLI    
