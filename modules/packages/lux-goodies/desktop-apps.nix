@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     kitty
     firefox
+    brave
     vscode-fhs
     imagemagick
     libnotify

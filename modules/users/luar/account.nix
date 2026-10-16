@@ -8,7 +8,7 @@
     packages = with pkgs; [
          
       matugen
-      ranger          
+      ranger lf          
       copyq     
       kanata
       dstask
