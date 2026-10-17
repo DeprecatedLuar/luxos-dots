@@ -1,22 +1,15 @@
-{ pkgs, ... }:
+# LUXOS property - keep walking buddy
+# Vendored into every user unit; luxos restores this file. Put your own values in this unit's modules/ folder.
+{ config, ... }:
 
+let
+  name = baseNameOf ./.;
+in
 {
-  # luxos.users.luar.password = ./.password.age;
-  users.users.luar = {
+  users.users.${name} = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" "docker" "input" "uinput" "video" ];
-    packages = with pkgs; [
-         
-      matugen
-      ranger lf          
-      copyq     
-      kanata
-      dstask
-      usql
-      visidata
-    ];
-    openssh.authorizedKeys.keys = [
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBfrCrs58DjL/Y2FI+9hS+0dVRglxcMfIb9aiALctrrZ luar"
-    ];
+    extraGroups = config.${name}.groups;
   };
+
+  luxos.users.${name}.password = ./.password.age;
 }

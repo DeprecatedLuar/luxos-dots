@@ -18,8 +18,10 @@
     ./preferences.nix
     ../packages/yappers-of-linux
     ../vimsanity
-    ../services/tailscale
+    ../services/tailscale.nix
     ../desktop/shells/noctalia.nix
     ../desktop/greeters/ly.nix
+    ../users/luar/modules/packages.nix
+    ../users/luar/modules/appearance.nix
   ];
 }

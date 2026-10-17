@@ -6,6 +6,7 @@
     ./docker.nix
     ../users/eduardo
     ../packages/fish.nix
+    ../hardware/intel.nix
     ../desktop/compositors/niri.nix
     ../desktop/greeters/greetd.nix
     ../desktop/shells/noctalia.nix
