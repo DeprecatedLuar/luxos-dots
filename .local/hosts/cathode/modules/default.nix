@@ -17,9 +17,8 @@
     ./networking.nix
     ../vimsanity
     ../packages/yappers-of-linux
-    ../services/tailscale.nix
+    ../services/tailscale
     ../packages/sunshine
     ../desktop/compositors/cinnamon.nix
-    ../desktop/greeters/ly.nix
   ];
 }

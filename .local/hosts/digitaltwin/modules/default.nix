@@ -15,6 +15,6 @@
     ../desktop/greeters/lightdm.nix
     ./packages.nix
     ../packages/lux-goodies/gaming.nix
-    ../services/tailscale.nix
+    ../services/tailscale
   ];
 }

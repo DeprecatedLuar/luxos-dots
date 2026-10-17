@@ -5,5 +5,6 @@
   imports = [
     ./boot.nix
     ./dgpu-only.nix
+    ./disable-keys.nix
   ];
 }

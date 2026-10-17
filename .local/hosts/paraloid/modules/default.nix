@@ -18,7 +18,7 @@
     ./preferences.nix
     ../packages/yappers-of-linux
     ../vimsanity
-    ../services/tailscale.nix
+    ../services/tailscale
     ../desktop/shells/noctalia.nix
     ../desktop/greeters/ly.nix
   ];
