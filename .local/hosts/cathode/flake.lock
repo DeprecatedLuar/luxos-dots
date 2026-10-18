@@ -61,22 +61,6 @@
         "type": "github"
       }
     },
-    "flake-file": {
-      "locked": {
-        "lastModified": 1789150028,
-        "narHash": "sha256-o/o3n8+HAzFOFH83SuGW/w5J6glHtV+r8v+gJbMeoXM=",
-        "owner": "denful",
-        "repo": "flake-file",
-        "rev": "eccac77d2c2567efb6f368330930f3d55af8668a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "denful",
-        "repo": "flake-file",
-        "rev": "eccac77d2c2567efb6f368330930f3d55af8668a",
-        "type": "github"
-      }
-    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -120,11 +104,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791631836,
-        "narHash": "sha256-2xRlbpSTZotOSJq4btxdyPvevT5mYk2CsZcJw4mfgnw=",
+        "lastModified": 1792238625,
+        "narHash": "sha256-Zmt7EuE7vIZXaTP3l5zhydoB6LhMoJ1D/moXzdnD0Cc=",
         "owner": "DeprecatedLuar",
         "repo": "luxos",
-        "rev": "df58d16f48f6da646771e30338d6a1b9d5d53e9c",
+        "rev": "475318e5d45cae0b303db6a8257a3629bc6087d9",
         "type": "github"
       },
       "original": {
@@ -203,12 +187,12 @@
       "inputs": {
         "ambxst": "ambxst",
         "borderline-lsd": "borderline-lsd",
-        "flake-file": "flake-file",
         "luxos": "luxos",
         "nixpkgs": "nixpkgs_3",
         "tcpeek": "tcpeek",
         "unstable": "unstable",
-        "yappers-of-linux": "yappers-of-linux"
+        "yappers-of-linux": "yappers-of-linux",
+        "zen-browser": "zen-browser"
       }
     },
     "systems": {
@@ -296,6 +280,26 @@
       "original": {
         "owner": "DeprecatedLuar",
         "repo": "yappers-of-linux",
+        "type": "github"
+      }
+    },
+    "zen-browser": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1792140224,
+        "narHash": "sha256-TEDD0EgSDKOl9hGNlEaINfd2Y4PFhyh4czw4lb1AGak=",
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
+        "rev": "5a0d21f99706b231df9ff35ab95dbccda88414d8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
         "type": "github"
       }
     }

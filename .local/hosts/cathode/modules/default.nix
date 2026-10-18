@@ -21,5 +21,6 @@
     ../packages/sunshine
     ../desktop/compositors/cinnamon.nix
     ../desktop/greeters/ly.nix
+    ../packages/zen.nix
   ];
 }
