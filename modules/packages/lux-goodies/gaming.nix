@@ -41,6 +41,13 @@
     enable32Bit = true;  # Required for 32-bit games and Windows games via Proton
   };
 
+  #──[Game Runtime Libraries]────────────────────────────────────────────────
+
+  programs.nix-ld.libraries = with pkgs; [
+    vulkan-loader
+    libxtst  # Minecraft
+  ];
+
   #──[Gaming Packages]───────────────────────────────────────────────────────
 
   environment.systemPackages = with pkgs; [

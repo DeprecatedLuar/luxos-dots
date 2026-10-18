@@ -7,7 +7,6 @@
 #    ../desktops/xfce.nix
     ../packages/lux-goodies/desktop-apps.nix
     ../packages/lux-goodies/modern-unix.nix
-    ../desktop/shells/ambxst
     ../users/luar
     ../extras.nix
     ../packages/lux-goodies/dev.nix
@@ -17,10 +16,10 @@
     ./networking.nix
     ../vimsanity
     ../packages/yappers-of-linux
-    ../services/tailscale.nix
+    ../services/tailscale
     ../packages/sunshine
     ../desktop/compositors/cinnamon.nix
-    ../desktop/greeters/ly.nix
-    ../packages/zen.nix
+    ../users/luar/modules/appearance.nix
+    ../users/luar/modules/packages.nix
   ];
 }
