@@ -21,5 +21,6 @@
     ../desktop/compositors/cinnamon.nix
     ../users/luar/modules/appearance.nix
     ../users/luar/modules/packages.nix
+    ../packages/squix.nix
   ];
 }

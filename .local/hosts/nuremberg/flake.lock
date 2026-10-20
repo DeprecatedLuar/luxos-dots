@@ -1,18 +1,23 @@
 {
   "nodes": {
-    "flake-file": {
+    "luxos": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
       "locked": {
-        "lastModified": 1789150028,
-        "narHash": "sha256-o/o3n8+HAzFOFH83SuGW/w5J6glHtV+r8v+gJbMeoXM=",
-        "owner": "denful",
-        "repo": "flake-file",
-        "rev": "eccac77d2c2567efb6f368330930f3d55af8668a",
+        "lastModified": 1792419485,
+        "narHash": "sha256-24AAG+KncWXg8nj/5XIyOCYWFTTxrqQ0Y1e/GpKjSu0=",
+        "owner": "DeprecatedLuar",
+        "repo": "luxos",
+        "rev": "9d965643368d28d89aade5a68197451fe2c38d2c",
         "type": "github"
       },
       "original": {
-        "owner": "denful",
-        "repo": "flake-file",
-        "rev": "eccac77d2c2567efb6f368330930f3d55af8668a",
+        "owner": "DeprecatedLuar",
+        "ref": "main",
+        "repo": "luxos",
         "type": "github"
       }
     },
@@ -34,8 +39,25 @@
     },
     "root": {
       "inputs": {
-        "flake-file": "flake-file",
-        "nixpkgs": "nixpkgs"
+        "luxos": "luxos",
+        "nixpkgs": "nixpkgs",
+        "unstable": "unstable"
+      }
+    },
+    "unstable": {
+      "locked": {
+        "lastModified": 1792455978,
+        "narHash": "sha256-nSJWFtMOPOovMKOGJZxNUYgGt5N4oEvrxRBqQkjA7jE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "70fdef7c16ffb24c9c74d91c73e438a39b46bfb5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
       }
     }
   },
