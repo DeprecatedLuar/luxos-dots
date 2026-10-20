@@ -8,6 +8,6 @@
     rclone
     usql
     lf
-    python3Packages.markitdown
+    unstable.claude-code
   ];
 }
