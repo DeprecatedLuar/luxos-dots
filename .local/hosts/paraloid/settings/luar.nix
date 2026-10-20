@@ -1,3 +1,3 @@
 {
-  luar.groups = ["networkmanager" "wheel" "docker" "input" "uinput" "video"]; # Supplementary groups of this user on this host
+  luar.groups = ["networkmanager" "wheel" "docker" "input" "uinput" "video"]; # wheel (sudo) | networkmanager | docker | video | input
 }

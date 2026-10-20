@@ -21,7 +21,5 @@
     ../services/tailscale
     ../desktop/shells/noctalia.nix
     ../desktop/greeters/ly.nix
-    ../users/luar/modules/packages.nix
-    ../users/luar/modules/appearance.nix
   ];
 }

@@ -7,7 +7,6 @@
     ../services/docker.nix
     ../services/tailscale
     ../users/luar
-    ../users/luar/modules/packages.nix
     ../extras.nix
     ../unstable.nix
     ./networking.nix
