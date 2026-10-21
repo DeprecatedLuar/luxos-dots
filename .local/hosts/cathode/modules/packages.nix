@@ -16,6 +16,7 @@
     hydralauncher   
     unstable.atlauncher unstable.xwayland-satellite unstable.libxkbcommon unstable.libxrender
 	gparted
+	krita
 	
 # CLI
     whisper-cpp
