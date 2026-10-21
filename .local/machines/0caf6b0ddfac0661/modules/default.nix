@@ -5,5 +5,7 @@
   imports = [
     ./boot.nix
     ./debug.nix
+    ../hardware/auto-reboot.nix
+    ./fingerprint.nix
   ];
 }

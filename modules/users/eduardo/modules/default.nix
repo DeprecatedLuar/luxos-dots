@@ -1,0 +1,7 @@
+{ ... }:
+{
+  imports = [
+    ./hjem
+    ./git.nix
+  ];
+}

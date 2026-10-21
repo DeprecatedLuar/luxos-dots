@@ -1,15 +1,15 @@
-{ pkgs, ... }:
+# LUXOS property - keep walking buddy
+# Vendored into every user unit; luxos restores this file. Put your own values in this unit's modules/ folder.
+{ config, ... }:
 
+let
+  name = baseNameOf ./.;
+in
 {
-  users.users.user = {
+  users.users.${name} = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
-    packages = with pkgs; [
-      # User-specific packages can go here
-      # Most tools are in system.nix already
-    ];
-    openssh.authorizedKeys.keys = [
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBfrCrs58DjL/Y2FI+9hS+0dVRglxcMfIb9aiALctrrZ luar"
-    ];
+    extraGroups = config.${name}.groups;
   };
+
+  luxos.users.${name}.password = ./.password.age;
 }

@@ -44,9 +44,5 @@
     # RAM stability testing
     memtester
     stressapptest
-
-    (wrapOBS {
-      plugins = with obs-studio-plugins; [ obs-pipewire-audio-capture ];
-    })
   ];
 }

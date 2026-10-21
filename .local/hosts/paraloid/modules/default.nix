@@ -12,7 +12,6 @@
     ../extras.nix
     ../packages/lux-goodies/dev.nix
     ../unstable.nix
-    ./fingerprint.nix
     ./networking.nix
     ./packages.nix
     ./preferences.nix
@@ -21,5 +20,6 @@
     ../services/tailscale
     ../desktop/shells/noctalia.nix
     ../desktop/greeters/ly.nix
+    ../packages/obs.nix
   ];
 }
