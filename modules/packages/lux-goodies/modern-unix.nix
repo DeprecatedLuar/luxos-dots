@@ -38,5 +38,6 @@
     free = "free -h";
     cat = "bat --paging=never --style=plain";
     nano = "micro";
+    ranger = "lf";
   };
 }

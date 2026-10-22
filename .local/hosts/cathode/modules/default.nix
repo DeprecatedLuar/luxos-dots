@@ -20,5 +20,9 @@
     ../packages/sunshine
     ../desktop/compositors/cinnamon.nix
     ../packages/squix.nix
+    ../packages/obs.nix
+    ../packages/ollama.nix
+    ../services/docker.nix
+    ../packages/agy.nix
   ];
 }

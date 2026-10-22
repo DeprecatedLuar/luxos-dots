@@ -3,26 +3,22 @@
 {
   environment.systemPackages = with pkgs; [
     kitty
-    firefox
-    brave
+    firefox brave   
     vscode-fhs
     imagemagick
-    libnotify
-    celluloid
+    libnotify   
     adwaita-icon-theme
     adw-gtk3
     zathura
-    playerctl
-    xfce.tumbler
-    ffmpegthumbnailer
+    playerctl celluloid mpv
+    xfce.tumbler ffmpegthumbnailer   
+    lf ranger
 
     # Qt theming
     darkly
     papirus-icon-theme
     kdePackages.breeze
-    adwaita-qt6
-
-    mpv
+    adwaita-qt6   
 
     # Wallpaper
     swaybg

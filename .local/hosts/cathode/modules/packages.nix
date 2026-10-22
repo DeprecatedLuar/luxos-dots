@@ -22,7 +22,7 @@
     whisper-cpp
     scrcpy
     android-tools      
-    ollama   
+    unstable.ollama   
     swayidle
     unstable.noctalia
     nwg-wrapper
