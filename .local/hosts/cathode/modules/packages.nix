@@ -17,6 +17,8 @@
     unstable.atlauncher unstable.xwayland-satellite unstable.libxkbcommon unstable.libxrender
 	gparted
 	krita
+	unstable.noctalia
+	anki
 	
 # CLI
     whisper-cpp
@@ -24,7 +26,6 @@
     android-tools      
     unstable.ollama   
     swayidle
-    unstable.noctalia
     nwg-wrapper
     quickshell
 
@@ -35,15 +36,5 @@
     # Hardware video acceleration diagnostics
     libva-utils
     v4l-utils
-
-    (wrapOBS {
-      plugins = with obs-studio-plugins; [ obs-pipewire-audio-capture ];
-    })
-  ];
-
-  # Native .so files extracted at runtime resolve their deps through nix-ld.
-  programs.nix-ld.libraries = with pkgs; [
-    unstable.libxkbcommon
-    unstable.libxrender
   ];
 }

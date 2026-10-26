@@ -25,8 +25,10 @@ let
     + builtins.readFile "${configDir}/kanata/vimsanity.kbd";
 in
 {
+  # Stable lags several kanata releases behind.
   services.kanata = {
     enable = true;
+    package = pkgs.unstable.kanata;
     keyboards.vimsanity = {
       devices = config.vimsanity.devices;
       extraDefCfg = defCfg;

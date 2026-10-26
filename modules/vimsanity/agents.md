@@ -38,8 +38,8 @@ remaps nothing. Swapping keyboards means updating this list.
 
 ## Applying a change
 
-Editing a `.kbd` does not take effect until the unit restarts; kanata v1.9.0 has
-no file-watch. A rebuild restarts it. The generated config is `--check`ed at
+Editing a `.kbd` does not take effect until the unit restarts; kanata has no
+file-watch. A rebuild restarts it. The generated config is `--check`ed at
 build time by the kanata module's `checkPhase`, so a malformed keymap fails the
 build instead of reaching the running system.
 

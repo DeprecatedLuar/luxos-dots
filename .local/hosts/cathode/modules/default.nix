@@ -23,6 +23,8 @@
     ../packages/obs.nix
     ../packages/ollama.nix
     ../services/docker.nix
-    ../packages/agy.nix
+    ../packages/antigravity.nix
+    ../desktop/greeters/ly.nix
+    ../packages/gnome-boxes.nix
   ];
 }

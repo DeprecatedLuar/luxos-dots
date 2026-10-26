@@ -1,7 +1,14 @@
-{ pkgs, luxos, ... }:
+{ inputs, pkgs, luxos, ... }:
 
 {
   imports = luxos.modules [ "unstable" ];
 
-  environment.systemPackages = [ pkgs.unstable.noctalia ];
+  luxos.inputs.noctalia = {
+    url = "github:noctalia-dev/noctalia/v5.3.0";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
+
+  environment.systemPackages = [
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+  ];
 }
