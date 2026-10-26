@@ -26,5 +26,6 @@
     ../packages/antigravity.nix
     ../desktop/greeters/ly.nix
     ../packages/gnome-boxes.nix
+    ../services/nix-build-tuning.nix
   ];
 }
