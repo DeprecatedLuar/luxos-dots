@@ -9,6 +9,7 @@ in
   users.users.${name} = {
     isNormalUser = true;
     extraGroups = config.${name}.groups;
+    openssh.authorizedKeys.keyFiles = [ ./authorized_keys ];
   };
 
   luxos.users.${name}.password = ./.password.age;

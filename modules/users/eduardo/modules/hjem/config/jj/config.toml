@@ -1,0 +1,6 @@
+[user]
+name = "Eduardo Função"
+email = "eduardo@eduardofuncao.com"
+
+[core]
+editor = "nvim"
