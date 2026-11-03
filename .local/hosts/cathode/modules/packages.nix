@@ -24,10 +24,10 @@
     whisper-cpp
     scrcpy
     android-tools      
-    unstable.ollama   
     swayidle
     nwg-wrapper
     quickshell
+    libinput
 
 # TUI
 	unstable.hyprmon
