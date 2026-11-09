@@ -7,7 +7,6 @@
     ../desktop/compositors/hyprland.nix
     ../packages/lux-goodies/desktop-apps.nix
     ../packages/lux-goodies/modern-unix.nix
-    ../desktop/shells/ambxst
     ../users/luar
     ../extras.nix
     ../packages/lux-goodies/dev.nix
@@ -18,7 +17,7 @@
     ../packages/yappers-of-linux
     ../vimsanity
     ../services/tailscale
-    ../desktop/shells/noctalia.nix
+    ../services/tailsocks
     ../desktop/greeters/ly.nix
     ../packages/obs.nix
   ];
