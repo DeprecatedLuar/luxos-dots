@@ -1,0 +1,49 @@
+{
+  "nodes": {
+    "luxos": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1793705442,
+        "narHash": "sha256-//OmaN6a1mcX7MFd1Bw8RJT3M/18jwvV1uwQjv//ais=",
+        "owner": "DeprecatedLuar",
+        "repo": "luxos",
+        "rev": "4c83f85c52ee50f631ed24ab0510e38da8f406ce",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DeprecatedLuar",
+        "ref": "main",
+        "repo": "luxos",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1794165970,
+        "narHash": "sha256-XuAV2cUwaod3Bt4XFVqiXz3v1w2ex16W6Sv4S7EWres=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ac588ef1c914865dad517b337ea0eb9694a4021c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-26.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "luxos": "luxos",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
