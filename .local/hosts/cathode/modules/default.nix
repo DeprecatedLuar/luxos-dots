@@ -24,7 +24,6 @@
     ../packages/ollama.nix
     ../services/docker.nix
     ../packages/antigravity.nix
-    ../desktop/greeters/ly.nix
     ../services/nix-build-tuning.nix
     ../devices/tablet.nix
   ];

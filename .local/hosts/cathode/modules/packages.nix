@@ -19,9 +19,11 @@
 	krita
 	unstable.noctalia
 	anki
+	easyeffects
 	
 # CLI
     whisper-cpp
+    ffmpeg-headless
     scrcpy
     android-tools      
     swayidle
