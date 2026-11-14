@@ -20,5 +20,6 @@
     ../services/tailsocks
     ../desktop/greeters/ly.nix
     ../packages/obs.nix
+    ../packages/speedread
   ];
 }
