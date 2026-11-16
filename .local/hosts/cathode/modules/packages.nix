@@ -20,6 +20,7 @@
 	unstable.noctalia
 	anki
 	easyeffects
+	gradia
 	
 # CLI
     whisper-cpp

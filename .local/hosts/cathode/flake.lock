@@ -42,6 +42,18 @@
         "type": "github"
       }
     },
+    "dorion-flatpak": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-Q8T/bZHYem6V1C5SEVEpWzgx+b+skccKAaCwKjdJmGU=",
+        "type": "file",
+        "url": "https://github.com/SpikeHD/Dorion/releases/download/v7.0.1/Dorion_7.0.1.flatpak"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/SpikeHD/Dorion/releases/download/v7.0.1/Dorion_7.0.1.flatpak"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -135,6 +147,22 @@
         "type": "github"
       }
     },
+    "nix-flatpak": {
+      "locked": {
+        "lastModified": 1790428548,
+        "narHash": "sha256-OsZ/I7v3ArCrk0XOUvkiU1dFtGtE1qZTHRGjvBXIKUU=",
+        "owner": "gmodena",
+        "repo": "nix-flatpak",
+        "rev": "f1f045fc8b35ff59f88982c1752d3f3a42ca6a61",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gmodena",
+        "ref": "latest",
+        "repo": "nix-flatpak",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1768127708,
@@ -188,7 +216,9 @@
       "inputs": {
         "antigravity-nix": "antigravity-nix",
         "borderline-lsd": "borderline-lsd",
+        "dorion-flatpak": "dorion-flatpak",
         "luxos": "luxos",
+        "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs_2",
         "squix": "squix",
         "tcpeek": "tcpeek",
